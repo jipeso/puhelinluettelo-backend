@@ -1,0 +1,1 @@
+DELETE https://puhelinluettelo-backend-hidden-brook-354.fly.dev/api/persons/1
