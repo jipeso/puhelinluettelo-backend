@@ -10,12 +10,18 @@
     "build:ui": "rm -rf dist && cd ../fullstack-palautus/osa3/puhelinluettelo-frontend/ && npm run build && cp -r dist ../../../puhelinluettelo-backend",
     "deploy": "fly deploy",
     "deploy:full": "npm run build:ui && npm run deploy",
-    "logs:prod": "fly logs"
+    "logs:prod": "fly logs",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix"
   },
   "author": "jipeso",
   "license": "ISC",
   "devDependencies": {
+    "@eslint/js": "^9.19.0",
     "@flydotio/dockerfile": "^0.7.4",
+    "@stylistic/eslint-plugin-js": "^3.0.1",
+    "eslint": "^9.19.0",
+    "globals": "^15.14.0",
     "nodemon": "^3.1.9"
   },
   "dependencies": {
